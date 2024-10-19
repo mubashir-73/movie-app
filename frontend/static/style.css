@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  background-color: yellow;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  height: 254px;
+  border-radius: 50px;
+  background: yellow;
+  box-shadow:
+    20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}

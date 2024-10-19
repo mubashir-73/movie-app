@@ -1,8 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder="../frontend/templates/",
+    static_folder="../frontend/static/",
+)
 
 
 @app.route("/")
-def hello():
-    return "<h1>Hello World</h1>"
+def indexret():
+    return render_template("index.html")
